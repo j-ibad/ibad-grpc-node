@@ -1,0 +1,26 @@
+{
+  "name": "@pub.ibad.one/ibad-grpc",
+  "version": "0.1.1",
+  "description": "A gRPC Class Wrapper for Node.js",
+  "main": "build/src/index.js",
+  "scripts": {
+    "build": "npx tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "gRPC"
+  ],
+  "author": "Josh Ibad",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.6",
+    "@grpc/proto-loader": "^0.7.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "src/**/*.ts",
+    "build/src/**/*.{js,d.ts,js.map}",
+    "LICENSE"
+  ]
+}
