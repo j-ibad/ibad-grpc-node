@@ -1,6 +1,6 @@
 {
-  "name": "@pub.ibad.one/ibad-grpc",
-  "version": "0.1.1",
+  "name": "@ibad.one/ibad-grpc",
+  "version": "0.1.2",
   "description": "A gRPC Class Wrapper for Node.js",
   "main": "build/src/index.js",
   "scripts": {

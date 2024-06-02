@@ -2,7 +2,8 @@ import {
   Server as GrpcServer,
   ServerCredentials as GrpcServerCredentials,
   ServiceClientConstructor,
-  GrpcObject
+  GrpcObject,
+  KeyCertPair
 } from '@grpc/grpc-js';
 
 import {IbadGrpc} from './IbadGrpc';
@@ -82,5 +83,8 @@ export class IbadGrpcServer extends IbadGrpc {
 export class IbadGrpcServerCreds {
   static createInsecure(){
     return GrpcServerCredentials.createInsecure();
+  }
+  static createSSL(root_certs: Buffer|null, key_cert_pairs: KeyCertPair[]){
+    return GrpcServerCredentials.createSsl(root_certs, key_cert_pairs);
   }
 }

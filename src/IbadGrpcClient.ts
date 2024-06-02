@@ -70,7 +70,7 @@ export class IbadGrpcClient extends IbadGrpc {
 
   // Loads connection parameters for client
   constructor(host: string, port: string|number,
-    creds: GrpcChannelCredentials=IbadGrpClientCreds.createInsecure(), 
+    creds: GrpcChannelCredentials=IbadGrpcClientCreds.createInsecure(), 
     opts: any={}
   ){
     super(opts);
@@ -109,8 +109,11 @@ export class IbadGrpcClient extends IbadGrpc {
  * Simple wrapper around gRPC ChannelCredentials
  * Needed to ensure compatibility and simplify imports
  */
-export class IbadGrpClientCreds {
+export class IbadGrpcClientCreds {
   static createInsecure(){
     return credentials.createInsecure();
+  }
+  static createSSL(root_certs?: Buffer|null){
+    return credentials.createSsl(root_certs);
   }
 }

@@ -6,5 +6,5 @@ export {
 export {
   IbadGrpcClient, 
   IbadGrpcClientService, 
-  IbadGrpClientCreds
+  IbadGrpcClientCreds
 } from "./IbadGrpcClient";

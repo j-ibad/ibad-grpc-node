@@ -28,7 +28,7 @@ NOTE: <b>Only Unary RPCs are currently supported.</b> Future versions will imple
 ## Installing
 
 ```
-npm install @pub.ibad.one/ibad-grpc
+npm install @ibad.one/ibad-grpc
 ```
 
 
